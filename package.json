@@ -1,0 +1,17 @@
+{
+  "name": "landing_page",
+  "version": "1.0.0",
+  "main": "landing_Page.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify landing_Page.js -o bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "description": ""
+}
