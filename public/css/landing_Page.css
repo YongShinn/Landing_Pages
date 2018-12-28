@@ -17,20 +17,21 @@ h3
 /* Heading */
 .big-heading {
   font-family: "Roboto";
-  font-weight: 400;
-  font-size: 600%;
+  font-weight: 900;
+  font-size: 700%;
   line-height: 1.5;
   margin-top: 15%;
 }
 .small-heading
 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 2;
-  margin-bottom: 4rem;
+  margin-bottom: 10%;
+  letter-spacing: 2.5px;
 }
 .small-head-div
 {
-  padding-right: 25%;
+  padding-right: 35%;
 
 }
 .btn
