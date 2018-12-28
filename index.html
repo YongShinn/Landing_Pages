@@ -7,6 +7,7 @@
   <title>BUYN</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <!-- Font Aweasome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -24,55 +25,45 @@
 </head>
 
 <body>
-
-  <div class="navDiv" name="navDiv">
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-
-      <a class="navbar-brand" href=""><img src="images/BUYN bubble.png" width="60" height="60" alt="">BUYN</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#features">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#how-to-use">How-To-Use</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#interest">Interest</a>
-          </li>
-        </ul>
-
-      </div>
-    </nav>
-  </div>
   <section class="colored-section" id="title">
-    <div class="container-fluid">
-      <!-- Title -->
+    <div class="pic_back">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
 
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="big-heading">Meet new friends and shop without shipping fee.</h1>
-          <!-- <button type="button" class="btn btn-dark btn-lg download-btn"><i class="fab fa-apple"></i> Coming soon</button>
-          <button type="button" class="btn btn-outline-light btn-lg download-btn"><i class="fab fa-google-play"></i> Coming Soon</button> -->
+        <a class="navbar-brand" href=""><img src="images/BUYN bubble.png" width="100" height="100" alt="">BUYN</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cssmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="cssmenu">
+          <!--navbarTogglerDemo02 -->
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#title">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-to-use">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interest">Register</a>
+            </li>
+          </ul>
+
         </div>
-        <div class="col-lg-6 mini_interest">
-          <h3> Register your interest now!</h3>
-          <form class="mini_Interest_Form" name="interest_input" action="/" method="post">
-            <input class="name" name="in_Name" placeholder="Please enter your name" type="text" size="30" /><br><br>
-            <input class="email" name="in_Email" placeholder="Please enter you E-mail" type="email" size="30" /><br><br>
-            <input class="radio" type="radio" name="gender" value="Male"> Male</input><br><br>
-            <input class="radio" type="radio" name="gender" value="Female"> Female</input><br><br>
-            <input class="myButton" type="submit" name="subission"></input>
-          </form>
-        </div>
+      </nav>
+      <!-- Title -->
+      <h1 class="big-heading">SHOPPING RE-DEFINED</h1>
+      <div class="small-head-div">
+        <h3 class="small-heading">BUYN offers true social shopping at your fingertips. We're here to help you re-define the way you shop online. It's everything familiar but better, together.</h3>
       </div>
+      <h3>Coming to you in early 2019.</h3>
+      <button type="button" class="btn reg btn-lg download-btn" onclick="window.location.href ='#interest';">REGISTER</button>
+      <button type="button" class="btn tell btn-lg download-btn" onclick="window.location.href ='#how-to-use';">TELL ME MORE</button>
     </div>
   </section>
 

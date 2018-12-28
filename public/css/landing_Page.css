@@ -1,27 +1,50 @@
 body {
-  font-family: "Montserrat";
+  font-family: "Roboto";
   text-align: center;
   background-color: #cccccc;
   margin: 0 3rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat";
-  font-weight: bold;
+  font-family: "Roboto";
 }
+
 h3
 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 /* Heading */
 .big-heading {
-  font-family: "Montserrat";
-  font-weight: 900;
-  font-size: 5rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 600%;
   line-height: 1.5;
+  margin-top: 15%;
 }
+.small-heading
+{
+  font-size: 1.2rem;
+  line-height: 2;
+  margin-bottom: 4rem;
+}
+.small-head-div
+{
+  padding-right: 25%;
 
+}
+.btn
+{
+  text-align: left;
+}
+.pic_back
+{
+  background-image: url("/images/bg pic, sector 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 15%;
+  text-align: left;
+}
 .section-heading {
   font-size: 3rem;
   line-height: 1.5;
@@ -55,8 +78,7 @@ h3
   font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
-  color: #000;
-  padding-left: 7rem;
+  color: #fff;
 }
 
 .nav-item {
@@ -64,11 +86,15 @@ h3
 }
 
 .nav-link {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: "Montserrat-Light";
-  color: #cccccc;
 }
-
+.navbar-dark .navbar-nav .nav-link
+{
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 900;
+}
 .mini_interest
 {
   border: 3px solid #fff;
@@ -78,7 +104,30 @@ h3
 
 /* Download Button */
 .download-btn {
-  margin: 5% 3% 5% 0;
+  margin: 1% 3% 15% 0;
+}
+.reg
+{
+  background:    #1fe5bd;
+  border-radius: 6px;
+  padding:       8px 50px;
+  color:         #ffffff;
+  display:       inline-block;
+  font:          normal 700 24px/1 "Calibri", sans-serif;
+  text-align:    center;
+  text-shadow:   none;
+}
+.tell
+{
+  background:    #ffffff;
+  border:        1px solid #cccccc;
+  border-radius: 6px;
+  padding:       8px 50px;
+  color:         #1fe5bd;
+  display:       inline-block;
+  font:          normal 700 24px/1 "Calibri", sans-serif;
+  text-align:    center;
+  text-shadow:   none;
 }
 
 /* Ttitle_Image */
@@ -221,3 +270,90 @@ h3
     transform: rotate(0);
   }
 }
+#cssmenu {
+  width: auto;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #1fe5bd;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #ffffff;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
