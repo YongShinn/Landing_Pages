@@ -18,11 +18,11 @@ app.post("/", function(req, res){
   var nam = req.body.in_Name;
   var mail = req.body.in_Email;
   var sex;
-  if (req.body.in_Male == "Male")
+  if (req.body.gender == "Male")
   {
     sex = "Male";
   }
-  if (req.body.in_Female == "Female")
+  if (req.body.gender == "Female")
   {
     sex = "Female";
   }

@@ -18,43 +18,42 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" type="image" href="public/images/favicon-32x32.PNG" />
+  <link rel="shortcut icon" type="image" href="images/favicon-32x32.PNG" />
 
 
 </head>
 
 <body>
 
+  <div class="navDiv" name="navDiv">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+      <a class="navbar-brand" href=""><img src="images/BUYN bubble.png" width="60" height="60" alt="">BUYN</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how-to-use">How-To-Use</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interest">Interest</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
   <section class="colored-section" id="title">
     <div class="container-fluid">
-
-
-
-      <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
-
-        <a class="navbar-brand" href="">BUYN</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#interest">Interest</a>
-            </li>
-          </ul>
-
-        </div>
-      </nav>
-
-
-
       <!-- Title -->
 
       <div class="row">
@@ -63,8 +62,15 @@
           <!-- <button type="button" class="btn btn-dark btn-lg download-btn"><i class="fab fa-apple"></i> Coming soon</button>
           <button type="button" class="btn btn-outline-light btn-lg download-btn"><i class="fab fa-google-play"></i> Coming Soon</button> -->
         </div>
-        <div class="col-lg-6">
-          <img class="title-image" src="images/laptop-mock-up.png" alt="laptop-mockup">
+        <div class="col-lg-6 mini_interest">
+          <h3> Register your interest now!</h3>
+          <form class="mini_Interest_Form" name="interest_input" action="/" method="post">
+            <input class="name" name="in_Name" placeholder="Please enter your name" type="text" size="30" /><br><br>
+            <input class="email" name="in_Email" placeholder="Please enter you E-mail" type="email" size="30" /><br><br>
+            <input class="radio" type="radio" name="gender" value="Male"> Male</input><br><br>
+            <input class="radio" type="radio" name="gender" value="Female"> Female</input><br><br>
+            <input class="myButton" type="submit" name="subission"></input>
+          </form>
         </div>
       </div>
     </div>
@@ -95,6 +101,48 @@
       </div>
     </div>
   </section>
+
+  <!-- How-to-use -->
+  <section class="white-section" id="how-to-use">
+    <div class="">
+      <div class="row">
+        <div class="features-box col-lg-6 gotColor">
+          <i class="fas fa-user-check fa-4x ficon"></i>
+          <h3 class="features-title">Easy to use.</h3>
+          <p class="features-dis">Definitly easier than asking what to eat.</p>
+        </div>
+        <div class="features-box col-lg-6 noColor">
+          <i class="fas fa-user-check fa-4x ficon"></i>
+          <h3 class="features-title">Easy to use.</h3>
+          <p class="features-dis">Definitly easier than asking what to eat.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="features-box col-lg-6 noColor">
+          <i class="fas fa-hand-holding-usd fa-4x ficon"></i>
+          <h3 class="features-title">Free shipping</h3>
+          <p class="features-dis">Who would say no to paying less?</p>
+        </div>
+        <div class="features-box col-lg-6 gotColor">
+          <i class="fas fa-hand-holding-usd fa-4x ficon"></i>
+          <h3 class="features-title">Free shipping</h3>
+          <p class="features-dis">Who would say no to paying less?</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="features-box col-lg-6 gotColor">
+          <i class="fas fa-user-friends fa-4x ficon"></i>
+          <h3 class="features-title">Shop and Share</h3>
+          <p class="features-dis">A shopping and social madia platform.</p>
+        </div>
+        <div class="features-box col-lg-6 noColor">
+          <i class="fas fa-user-friends fa-4x ficon"></i>
+          <h3 class="features-title">Shop and Share</h3>
+          <p class="features-dis">A shopping and social madia platform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- interest -->
 
   <section class="colored-section" id="interest">
@@ -102,11 +150,11 @@
       <h3 class="big-heading interest_Form">Register for interest.</h3>
 
       <form class="interest_Form" name="interest_input" action="/" method="post">
-      <input class="name" name="in_Name" placeholder="Please enter your name" type="text" size="30" /><br><br>
-      <input class="email" name="in_Email" placeholder="Please enter you E-mail" type="email" size="30" /><br><br>
-      <input class="radio" name="in_Male"type="radio" name="gender" value="Male"> Male</input><br><br>
-      <input class="radio" name="in_Female" type="radio" name="gender" value="Female"> Female</input><br><br>
-      <input class="myButton" type="submit" name="subission"></input>
+        <input class="name" name="in_Name" placeholder="Please enter your name" type="text" size="30" /><br><br>
+        <input class="email" name="in_Email" placeholder="Please enter you E-mail" type="email" size="30" /><br><br>
+        <input class="radio" type="radio" name="gender" value="Male"> Male</input><br><br>
+        <input class="radio" type="radio" name="gender" value="Female"> Female</input><br><br>
+        <input class="myButton" type="submit" name="subission"></input>
       </form>
     </div>
   </section>
@@ -117,11 +165,11 @@
   <footer class="white-section" id="footer">
     <div class="container-fluid">
 
-      <i class="fab fa-twitter footer-icon"></i>
-      <i class="fab fa-facebook-f footer-icon"></i>
-      <i class="fab fa-instagram footer-icon"></i>
-      <i class="fas fa-envelope footer-icon"></i>
-      <p class="copyright">© Copyright 2018 BUYN</p>
+      <i class="fab fa-twitter footer-icon fa-2x"></i>
+      <a href="http://fb.me/buynofficial"><i class="fab fa-facebook-f footer-icon fa-2x"></i></a>
+      <i class="fab fa-instagram footer-icon fa-2x"></i>
+      <a href="mailto:hello@buyn.io"><i class="fas fa-envelope footer-icon fa-2x"></i><a>
+          <p class="copyright">© Copyright 2018 BUYN</p>
     </div>
   </footer>
 

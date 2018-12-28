@@ -1,18 +1,24 @@
 body {
   font-family: "Montserrat";
   text-align: center;
+  background-color: #cccccc;
+  margin: 0 3rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
   font-weight: bold;
 }
+h3
+{
+  font-size: 2.2rem;
+}
 
 /* Heading */
 .big-heading {
   font-family: "Montserrat";
   font-weight: 900;
-  font-size: 3.5rem;
+  font-size: 5rem;
   line-height: 1.5;
 }
 
@@ -23,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* container */
 .container-fluid {
-  padding: 7% 15%;
+  padding: 7% 10%;
 }
 /* section */
 .colored-section
@@ -36,14 +42,21 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
 }
 /* Navigation Bar */
+.navDiv
+{
+  background-color: #fff;
+  color: #000;
+}
 .navbar {
-  padding: 0 0 4.5rem;
+  padding: 1rem 0.5rem 1rem;
 }
 
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
+  color: #000;
+  padding-left: 7rem;
 }
 
 .nav-item {
@@ -51,8 +64,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link {
-  font-size: 1.2rem;
-  font-family: "Montserrat-Light"
+  font-size: 1.5rem;
+  font-family: "Montserrat-Light";
+  color: #cccccc;
+}
+
+.mini_interest
+{
+  border: 3px solid #fff;
+  padding: 5%;
+  border-radius: 15px;
 }
 
 /* Download Button */
@@ -63,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Ttitle_Image */
 #title .container-fluid
 {
-  padding: 3% 15% 7%;
+  padding: 3% 15% 3%;
   text-align: left;
 }
 .title-image {
@@ -79,14 +100,22 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 1;
 }
+.gotColor
+{
+  background-color: #1fe5bd;
+}
+.noColor
+{
+  background-color: #f9f9f9;
+}
 
 .features-box {
-  padding: 5%;
+  padding: 2%;
 }
 
 .features-dis {
   color: #8f8f8f;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .ficon {
@@ -99,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .features-title {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 
@@ -108,13 +137,13 @@ h1, h2, h3, h4, h5, h6 {
 .interest_Form
 {
   text-align: left;
-  padding-left: 20%;
+  padding-left: 15%;
 }
 .name
 {
   border-radius: 14px;
   padding: 5px;
-  font-size: 16px;
+  font-size: 1.4rem;
   border-width: 1px;
   border-color: #CCCCCC;
   background-color: #FFFFFF;
@@ -125,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 {
   border-radius: 14px;
   padding: 5px;
+  font-size: 1.4rem;
   border-width: 1px;
   border-color: #CCCCCC;
   background-color: #FFFFFF;
@@ -134,7 +164,6 @@ h1, h2, h3, h4, h5, h6 {
 .myButton {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
 	background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
 	background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
@@ -151,11 +180,10 @@ h1, h2, h3, h4, h5, h6 {
 	cursor:pointer;
 	color:#777777;
 	font-family:Arial;
-	font-size:15px;
+	font-size: 1.5rem;
 	font-weight:bold;
 	padding:6px 24px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
 }
 .myButton:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
@@ -173,12 +201,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Footer */
+#footer
+{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 .footer-icon {
   margin: auto 10px;
 }
 
 .copyright {
   color: grey;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 1028px) {
