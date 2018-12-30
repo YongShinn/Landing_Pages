@@ -17,16 +17,7 @@ app.get("/", function(req, res){
 app.post("/", function(req, res){
   var nam = req.body.in_Name;
   var mail = req.body.in_Email;
-  var sex;
-  if (req.body.gender == "Male")
-  {
-    sex = "Male";
-  }
-  if (req.body.gender == "Female")
-  {
-    sex = "Female";
-  }
-  console.log(nam + mail + sex);
+  console.log(nam + mail);
 
   var xhr = new XMLHttpRequest();
   xhr.open('POST', 'https://l3f3ds1nn1.execute-api.ap-southeast-1.amazonaws.com/deploy/landing-page');

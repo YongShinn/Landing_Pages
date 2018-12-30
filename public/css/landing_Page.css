@@ -9,23 +9,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto";
 }
 
-h3
-{
-  font-size: 2rem;
-}
 
 /* Heading */
 .big-heading {
   font-family: "Roboto";
   font-weight: 500;
-  font-size: 700%;
+  font-size: 500%;
   line-height: 1.5;
   margin-top: 15%;
 }
 .small-heading
 {
-  font-size: 1.3rem;
-  line-height: 2;
+  font-size: 1rem;
+  line-height: 1.5;
   margin-bottom: 10%;
   letter-spacing: 2.5px;
 }
@@ -40,7 +36,7 @@ h3
 }
 .pic_back
 {
-  background-image: url("/images/bg pic, sector 1.png");
+  background-image: url("/images/sector 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 15%;
@@ -53,7 +49,7 @@ h3
 
 /* container */
 .container-fluid {
-  padding: 7% 10%;
+  padding: 3% 10%;
 }
 /* section */
 .colored-section
@@ -96,16 +92,14 @@ h3
   font-family: "Montserrat";
   font-weight: 900;
 }
-.mini_interest
-{
-  border: 3px solid #fff;
-  padding: 5%;
-  border-radius: 15px;
-}
 
 /* Download Button */
 .download-btn {
-  margin: 1% 3% 15% 0;
+  margin: 1% 3% 10% 0;
+}
+.download-btn:hover
+{
+  background:    #CCCCCC;
 }
 .reg
 {
@@ -114,7 +108,7 @@ h3
   padding:       8px 50px;
   color:         #ffffff;
   display:       inline-block;
-  font:          normal 700 24px/1 "Calibri", sans-serif;
+  font:          normal 700 20px/1 "Calibri", sans-serif;
   text-align:    center;
   text-shadow:   none;
 }
@@ -126,7 +120,7 @@ h3
   padding:       8px 50px;
   color:         #1fe5bd;
   display:       inline-block;
-  font:          normal 700 24px/1 "Calibri", sans-serif;
+  font:          normal 700 20px/1 "Calibri", sans-serif;
   text-align:    center;
   text-shadow:   none;
 }
@@ -145,10 +139,10 @@ h3
 
 }
 
-/* Feature */
-#features {
-  position: relative;
-  z-index: 1;
+/* how to use */
+#how-to-use
+{
+  color: #071e3d;
 }
 .gotColor
 {
@@ -158,37 +152,24 @@ h3
 {
   background-color: #f9f9f9;
 }
-
-.features-box {
-  padding: 2%;
-}
-
-.features-dis {
-  color: #8f8f8f;
-  font-size: 2rem;
-}
-
-.ficon {
-  color: #1fe5bd;
-  margin-bottom: 1rem;
-}
-
-.ficon:hover {
-  color: #13abc4;
-}
-
-.features-title {
-  font-size: 3rem;
-}
-
+ .instruction
+ {
+   text-align: left;
+   padding-left: 17%;
+ }
+ .step
+ {
+   font-size: 230%;
+   letter-spacing: 2px;
+   line-height: 2;
+ }
+ .mockUp
+ {
+   text-align: left;
+ }
 
 
 /* interest form */
-.interest_Form
-{
-  text-align: left;
-  padding-left: 15%;
-}
 .name
 {
   border-radius: 14px;
@@ -211,58 +192,23 @@ h3
   color: #000000;
   border-style: solid;
 }
-.myButton {
-	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
-	background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-	background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-	background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-	background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
-	background-color:#ededed;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#777777;
-	font-family:Arial;
-	font-size: 1.5rem;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-}
-.myButton:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
-	background:-moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
-	background:-webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
-	background:-o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
-	background:-ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
-	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
-	background-color:#dfdfdf;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
+.download-btn2
+{
+  margin: 1% 3% 0 0;
 }
 
 /* Footer */
 #footer
 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+
 }
 .footer-icon {
-  margin: auto 10px;
+  margin-right: 10px;
 }
 
 .copyright {
   color: grey;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 1028px) {
@@ -309,7 +255,7 @@ h3
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   position: relative;
   -webkit-transition: color .25s;
   -moz-transition: color .25s;
