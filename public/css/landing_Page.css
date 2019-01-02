@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 500%;
-  line-height: 1.5;
+  line-height: 150%;
   margin-top: 15%;
 }
 .small-heading
@@ -159,9 +159,9 @@ h1, h2, h3, h4, h5, h6 {
  }
  .step
  {
-   font-size: 230%;
-   letter-spacing: 2px;
-   line-height: 2;
+   font-size: 2.3em;
+   letter-spacing: 0.125em;
+   line-height: 150%;
  }
  .mockUp
  {
@@ -212,9 +212,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1028px) {
-  .title-image {
-    position: static;
-    transform: rotate(0);
+  .pic_back
+  {
+    padding: 0 5%;
+  }
+  .navbar-brand
+  {
+    font-size: 1.5rem;
+  }
+.navbar-brand img
+  {
+    width: 20%;
+    height: auto;
+  }
+  .instruction{
+    padding-left: 5%;
+  }
+  img{
+    width: 75%;
+    height: auto;
+  }
+  .step
+  {
+    font-size: 1.3em;
+    letter-spacing: 0.125em;
+    line-height: 100%;
   }
 }
 #cssmenu {
