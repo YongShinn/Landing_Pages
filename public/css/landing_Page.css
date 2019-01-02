@@ -219,6 +219,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1028px) {
+  a.navbar-brand
+  {
+    width: 300px;
+  }
   .pic_back
   {
     padding: 0 5%;
@@ -231,6 +235,10 @@ h1, h2, h3, h4, h5, h6 {
   {
     width: 20%;
     height: auto;
+  }
+  .big-heading
+  {
+    margin-top: 7%;
   }
   .instruction{
     padding-left: 5%;
