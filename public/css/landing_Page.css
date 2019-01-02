@@ -148,11 +148,13 @@ h1, h2, h3, h4, h5, h6 {
 .gotColor
 {
   background-color: #f7f7f7;
-  padding-top: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%
 }
 .noColor
 {
   background-color: #FFFFFF;
+  padding-top: 2.5%;
 }
  .instruction
  {
