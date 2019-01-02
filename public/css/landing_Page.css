@@ -189,6 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFFFFF;
   color: #000000;
   border-style: solid;
+  width: 35%;
 }
 .email
 {
@@ -200,6 +201,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFFFFF;
   color: #000000;
   border-style: solid;
+  width: 35%;
 }
 .download-btn2
 {
@@ -224,9 +226,13 @@ h1, h2, h3, h4, h5, h6 {
   body{
     margin: 0 0;
   }
+  h3
+  {
+    font-size: 1.1rem;
+  }
   a.navbar-brand
   {
-    width: 300px;
+    width: 50%;
   }
   .pic_back
   {
@@ -243,7 +249,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   .big-heading
   {
+    font-size: 300%;
     margin-top: 7%;
+  }
+  .small-heading
+  {
+    font-size: 0.7rem;
   }
   .instruction{
     padding-left: 5%;
@@ -261,6 +272,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.3em;
     letter-spacing: 0.125em;
     line-height: 100%;
+  }
+  .name
+  {
+    width: 70%;
+    font-size: 1rem;
+  }
+  .email
+  {
+    width: 70%;
+    font-size: 1rem;
   }
 }
 #cssmenu {
