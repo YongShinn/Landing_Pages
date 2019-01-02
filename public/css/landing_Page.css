@@ -221,9 +221,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1028px) {
+  body{
+    margin: 0 0;
+  }
+  h3
+  {
+    font-size: 1rem;
+  }
   a.navbar-brand
   {
-    width: 300px;
+    width: 200px;
   }
   .pic_back
   {
@@ -231,16 +238,21 @@ h1, h2, h3, h4, h5, h6 {
   }
   .navbar-brand
   {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 .navbar-brand img
   {
-    width: 20%;
+    width: 15%;
     height: auto;
   }
   .big-heading
   {
     margin-top: 7%;
+    font-size: 200%;
+  }
+  .small-heading
+  {
+    font-size: 0.5rem;
   }
   .instruction{
     padding-left: 5%;
