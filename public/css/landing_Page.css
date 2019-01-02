@@ -144,18 +144,25 @@ h1, h2, h3, h4, h5, h6 {
 {
   color: #071e3d;
 }
+
 .gotColor
 {
-  background-color: #1fe5bd;
+  background-color: #f7f7f7;
+  padding-top: 5%;
 }
 .noColor
 {
-  background-color: #f9f9f9;
+  background-color: #FFFFFF;
 }
  .instruction
  {
    text-align: left;
    padding-left: 17%;
+ }
+ .instruction2
+ {
+   text-align: left;
+   spadding-right: 17%;
  }
  .step
  {
@@ -226,6 +233,10 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
   }
   .instruction{
+    padding-left: 5%;
+  }
+  .instruction2
+  {
     padding-left: 5%;
   }
   img{
