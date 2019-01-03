@@ -8,7 +8,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto";
 }
-
+i
+{
+  color: #000;
+}
 
 /* Heading */
 .big-heading {
@@ -179,6 +182,16 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* interest form */
+#interest
+{
+  background-image: url("/images/bottom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h3.interest_Form
+{
+  color: #000;
+}
 .name
 {
   border-radius: 14px;
@@ -209,10 +222,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Footer */
-#footer
-{
-
-}
 .footer-icon {
   margin-right: 10px;
 }
@@ -230,12 +239,16 @@ h1, h2, h3, h4, h5, h6 {
   {
     font-size: 1.1rem;
   }
+
   a.navbar-brand
   {
     width: 50%;
   }
   .pic_back
   {
+    background-image: url("/images/phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0 5%;
   }
   .navbar-brand
