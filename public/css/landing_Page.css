@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto";
+  font-family: "Montserrat";
   text-align: center;
   background-color: #cccccc;
   margin: 0 3rem 0;
@@ -184,7 +184,7 @@ i
 /* interest form */
 #interest
 {
-  background-image: url("/images/registration1.jpg");
+  background-image: url("/images/registration1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
