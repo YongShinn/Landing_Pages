@@ -6,7 +6,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto";
+  font-family: "Montserrat;";
 }
 i
 {
@@ -39,7 +39,7 @@ i
 }
 .pic_back
 {
-  background-image: url("/images/sector 1.png");
+  background-image: url("/images/hero2.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 15%;
@@ -184,7 +184,7 @@ i
 /* interest form */
 #interest
 {
-  background-image: url("/images/bottom.jpg");
+  background-image: url("/images/registration1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
