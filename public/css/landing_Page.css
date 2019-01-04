@@ -2,7 +2,6 @@ body {
   font-family: "Montserrat";
   text-align: center;
   background-color: #cccccc;
-  margin: 0 3rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,16 +9,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 i
 {
-  color: #000;
+  color: #fff;
 }
 
 /* Heading */
-.big-heading {
-  font-family: "Roboto";
-  font-weight: 500;
+.big-heading
+{
+  font-weight: 900;
   font-size: 500%;
   line-height: 150%;
-  margin-top: 15%;
+  margin-top: 11%;
 }
 .small-heading
 {
@@ -75,7 +74,7 @@ i
 }
 
 .navbar-brand {
-  font-family: "Ubuntu";
+  font-family: "Montserrat";
   font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
@@ -150,7 +149,7 @@ i
 
 .gotColor
 {
-  background-color: #f7f7f7;
+  background-color: #e3e3e3;
   padding-top: 2.5%;
   padding-bottom: 2.5%
 }
@@ -162,22 +161,20 @@ i
  .instruction
  {
    text-align: left;
-   padding-left: 17%;
- }
- .instruction2
- {
-   text-align: left;
-   spadding-right: 17%;
+   padding-right: 17%;
  }
  .step
  {
+   font-weight: 800;
    font-size: 2.3em;
    letter-spacing: 0.125em;
    line-height: 150%;
+   padding: 25% 0;
+
  }
  .mockUp
  {
-   text-align: left;
+   text-align: right;
  }
 
 
@@ -188,15 +185,11 @@ i
   background-repeat: no-repeat;
   background-size: cover;
 }
-h3.interest_Form
-{
-  color: #000;
-}
 .name
 {
   border-radius: 14px;
   padding: 5px;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   border-width: 1px;
   border-color: #CCCCCC;
   background-color: #FFFFFF;
@@ -208,13 +201,21 @@ h3.interest_Form
 {
   border-radius: 14px;
   padding: 5px;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   border-width: 1px;
   border-color: #CCCCCC;
   background-color: #FFFFFF;
   color: #000000;
   border-style: solid;
   width: 35%;
+}
+.name:focus
+{
+  outline: none;
+}
+.email:focus
+{
+  outline: none;
 }
 .download-btn2
 {
@@ -227,7 +228,7 @@ h3.interest_Form
 }
 
 .copyright {
-  color: grey;
+  color: #fff;
   font-size: 1rem;
 }
 
@@ -285,6 +286,7 @@ h3.interest_Form
     font-size: 1.3em;
     letter-spacing: 0.125em;
     line-height: 100%;
+    padding: 0 0;
   }
   .name
   {
