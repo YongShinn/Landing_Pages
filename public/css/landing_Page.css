@@ -53,6 +53,10 @@ i
 .container-fluid {
   padding: 3% 10%;
 }
+.container-fluid_howToUse
+{
+  padding: 0 10% 3%;
+}
 /* section */
 .colored-section
 {
@@ -157,11 +161,11 @@ i
 {
   background-color: #FFFFFF;
   padding-top: 2.5%;
+  padding-bottom: 2.5%
 }
  .instruction
  {
    text-align: left;
-   padding-right: 17%;
  }
  .step
  {
@@ -169,7 +173,7 @@ i
    font-size: 2.3em;
    letter-spacing: 0.125em;
    line-height: 150%;
-   padding: 25% 0;
+   padding-top: 25%;
 
  }
  .mockUp
