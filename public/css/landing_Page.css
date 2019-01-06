@@ -145,6 +145,11 @@ i
 }
 
 /* hightlight */
+.highlight-img
+{
+  width: 40%;
+  height: auto;
+}
 /* .highlight
 {
   color: #071e3d;
@@ -179,7 +184,7 @@ i
  .step
  {
    font-weight: 600;
-   font-size: 2.3em;
+   font-size: 2.2em;
    line-height: 150%;
    padding-top: 22%;
 
@@ -295,6 +300,11 @@ i
   {
     padding: 2% 10%;
   }
+  .highlight-img
+  {
+    width: 100%;
+    height: auto;
+  }
   .instruction{
     padding-left: 5%;
   }
@@ -302,7 +312,8 @@ i
   {
     padding-left: 5%;
   }
-  img{
+  img
+  {
     width: 75%;
     height: auto;
   }
