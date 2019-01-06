@@ -16,8 +16,9 @@ i
 .big-heading
 {
   font-weight: 900;
-  font-size: 500%;
+  font-size: 600%;
   line-height: 150%;
+  letter-spacing: 1rem;
   margin-top: 11%;
 }
 .small-heading
@@ -26,11 +27,6 @@ i
   line-height: 1.5;
   margin-bottom: 10%;
   letter-spacing: 2.5px;
-}
-.small-head-div
-{
-  padding-right: 35%;
-
 }
 .btn
 {
@@ -42,7 +38,10 @@ i
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 15%;
-  text-align: left;
+}
+.small-head-div
+{
+  padding: 2% 20%;
 }
 .section-heading {
   font-size: 3rem;
@@ -181,7 +180,6 @@ i
  {
    font-weight: 600;
    font-size: 2.3em;
-   letter-spacing: 0.125em;
    line-height: 150%;
    padding-top: 22%;
 
@@ -190,9 +188,8 @@ i
  {
    font-weight: 600;
    font-size: 2.3em;
-   letter-spacing: 0.125em;
    line-height: 150%;
-   padding-top: 10%;
+   padding-top: 13%;
 
  }
  .mockUp
