@@ -285,10 +285,15 @@ i
   {
     font-size: 300%;
     margin-top: 7%;
+    letter-spacing: 0;
   }
   .small-heading
   {
     font-size: 0.7rem;
+  }
+  .small-head-div
+  {
+    padding: 2% 10%;
   }
   .instruction{
     padding-left: 5%;
