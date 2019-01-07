@@ -16,6 +16,10 @@ app.get("/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 
+app.get("/a", function(req, res) {
+  res.sendFile(__dirname + "/THX.html");
+});
+
 app.post("/", function(req, res) {
   var nam = req.body.in_Name;
   var mail = req.body.in_Email;
@@ -32,9 +36,8 @@ app.post("/", function(req, res) {
   xhr.send(JSON.stringify({
     name: nam,
     email: mail,
-    gender: sex
   }));
-  res.redirect("/#interest");
+  res.redirect("/a");
 });
 
 app.listen(3000, function() {
