@@ -7,20 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BUYN</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 
   <!-- Font Aweasome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="css/landing_Page.css">
   <!-- bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image" href="images/favicon-32x32.png" />
 
 
@@ -28,14 +26,14 @@
 
 <body>
   <section class="colored-section" id="title">
-    <div class="pic_back">
+    <div class="">
       <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-light navbar-expand-lg">
 
-        <a class="navbar-brand" href=""><img src="images/BUYN bubble.png" width="100" height="100" alt="">BUYN</a>
+        <a class="navbar-brand" href=""><img src="images/BUYN bubble.png" width="58" height="58" alt="">BUYN</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cssmenu">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" style="color: #000;"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="cssmenu">
@@ -46,138 +44,146 @@
               <a class="nav-link" href="#title">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#howToUse">About</a>
+              <a class="nav-link" id="about" href="#benefit">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#interest">Register</a>
+              <a class="nav-link" data-toggle="modal" data-target="#myModal">Contact us</a>
             </li>
           </ul>
-
         </div>
       </nav>
-      <!-- Title -->
-      <h1 class="big-heading">SHOPPING <br>RE-DEFINED</br></h1>
-      <div class="small-head-div">
-        <h3 class="small-heading">BUYN offers true social shopping at your fingertips. We're here to help you re-define the way you shop online. It's everything familiar but better, together.</h3>
-      </div>
-      <h3>Coming to you in early 2019.</h3>
-      <button type="button" class="btn reg btn-lg download-btn" onclick="myScrolling(interest)">REGISTER</button>
-      <button type="button" class="btn tell btn-lg download-btn" onclick="myScrolling(howToUse)">TELL ME MORE</button>
     </div>
   </section>
 
-  <section class="highlight colored-section">
-    <div class="container-fluid">
-      <img src="images/hightlight.jpg" class="highlight-img" alt="">
+  <section id="introduction">
+    <div class="container-fluid intro">
+      <div>
+        <h1 class="big-heading">Say goodbye to shipping fees </h1>
+      </div>
+      <div>
+        <h2 class="small-heading"><br><br>Shipping fees. You might like it, you might not. We don't care. Here at BUYN, we exist just to make you say goodbye to your shipping fees. Shopping online is always fun but we believe its better, together.
+          <br><br>Register now for early access!</h3>
+      </div>
+      <form class="interest_Form" name="interest_input" action="/" method="post">
+        <input class="name" name="in_Name" placeholder="Name" type="text" required />
+        <input class="email" name="in_Email" placeholder="Email" type="email" required />
+        <input class="btn reg btn-lg" id="myBtn" type="submit" name="subission" value="Register" data-toggle="modal" data-target="#myModal2"></input>
+      </form>
     </div>
   </section>
 
-  <!-- How-to-use -->
-  <section class="white-section" id="howToUse">
-    <div class="container-fluid container-fluid_howToUse">
-      <div class="row">
-        <div class="features-box col-sm-6 noColor mockUp">
-          <img src="images/browser window.png" alt="">
-        </div>
-        <div class="features-box col-sm-6 noColor instruction">
-          <h2 class="step">Step 1: Select retailers through BUYN</h2>
-        </div>
+
+  <!-- Benefit -->
+  <section class="white-section" id="benefit"  style="text-align: center;">
+    <div class="container-fluid row" style="text-align: left;">
+      <div class="col-sm-4">
+        <img src="images/baskethand2small.png" alt="baskethand2small.png" style="width: 8rem; height: 8rem; padding-bottom: 0.5rem;">
+        <h3> Seamless multi-user single basket system - Bubbles</h3>
+        <p>
+          Free shipping sounds too good to be true? Probably so for those of you without friends.<br><br>
+
+          But if you do, here's how it works.  Checkout with us on your purchase, share the cart (we call it Bubbles) link with your friends to let them add on to it themselves and voila. Free shipping.<br><br>
+
+          Sounds like magic? Yea it is.
+        </p>
       </div>
-      <div class="row">
-        <div class="features-box col-sm-6 gotColor mockUp">
-          <img src="images/browser window_2.png" alt="">
-        </div>
-        <div class="features-box col-sm-6 gotColor instruction">
-          <h2 class="step">Step 2: Choose your favourite product</h2>
-        </div>
+      <div class="col-sm-4">
+        <img src="images/high-five.png" alt="high-five.png" style="width: 8rem; height: 8rem; padding-bottom: 0.5rem;">
+        <h3>Group purchase benefits<br><br></h3>
+        <p>
+          Checkout with us to get some cool perks with the mates that you shopped with .  You don't need to know what they are, just know that they be some COOL PERKS.<br><br>
+
+          Friendship FTW huh.
+        </p>
       </div>
-      <div class="row">
-        <div class="features-box col-sm-6 noColor mockUp">
-          <img src="images/browser window_3.png" alt="">
-        </div>
-        <div class="features-box col-sm-6 noColor instruction">
-          <h2 class="step3">Step 3: Check out and get friends to join your shopping cart (we call it Bubble, fill it up within a day!)</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="features-box col-sm-6 gotColor mockUp">
-          <img src="images/browser window_4.png" alt="">
-        </div>
-        <div class="features-box col-sm-6 gotColor instruction">
-          <h2 class="step">Step 4: Enjoy discounted shipping rates!</h2>
-        </div>
+      <div class="col-sm-4">
+        <img src="images/group benefits2small.png" alt="group benefits2small.png" style="width: 8rem; height: 8rem; padding-bottom: 0.5rem;">
+        <h3>Peer 2 peer delivery<br><br></h3>
+        <p>
+          Then how do I get my 96k carat ring I ordered online? You dont. Nobody orders that online, does it even exist?<br><br>
+
+          For the rest of us buying normal,  cooler stuff - the person who starts the Bubble gets the package delivered to their shipping address. From there on, its your choice. We sometimes prefer a flying monkey, but you can always use your own monkey hands.
+        </p>
       </div>
     </div>
+    <button class="btn reg2 btn-lg" id="reg2" href="#introduction">REGISTER</button>
   </section>
   <!-- interest -->
 
-  <section class="colored-section" id="interest">
-    <div class="container-fluid">
-      <h3 class="interest_Form" id="myModal">Register now for early access!</h3>
-      <form class="interest_Form" name="interest_input" action="/" method="post">
-        <input class="name" name="in_Name" placeholder="Name" type="text" required/><br><br>
-        <input class="email" name="in_Email" placeholder="Your E-mail" type="email" required/><br><br>
-        <input class="btn reg btn-lg download-btn2" id="myBtn" type="submit" name="subission" value="SIGN UP NOW"></input>
-      </form>
-      <span id="message"></span>
-    </div>
+  <section class="footer">
     <footer>
       <div class="">
-        <span style="color: #fff; font-size: 1.2em;">
+        <a href="https://www.instagram.com/buynofficial/?hl=en"><img src="images/insta.png" alt="insta.png" style="width: 30px; height: 30px; float: left;"></a>
+        <a href=""><img src="images/twitter.png" alt="twitter.png" style="width: 30px; height: 30px; float: left;"></a>
+        <a href="http://fb.me/buynofficial"><img src="images/facebook.png" alt="facebook.png" style="width: 30px; height: 30px; float: left;"></a>
+        <!-- <span style="color: #fff; font-size: 1.2em;">
           <a href="http://fb.me/buynofficial"><i class="fab fa-facebook footer-icon"></i></a>
           <a href="https://www.instagram.com/buynofficial/?hl=en"><i class="fab fa-instagram footer-icon"></i></a>
           <a href="mailto:hello@buyn.io"><i class="fas fa-envelope footer-icon"></i><a>
-        </span>
-          <p class="copyright">© Copyright 2019 BUYN</p>
+        </span> -->
+        <h6 class="copyright">Talk to us, we love it. No seriously, we do.</h6>
       </div>
     </footer>
   </section>
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="text-align: center;">
+    <div class="modal-dialog">
 
-  <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #1fe5bd; color: #fff;">
+          <h4 class="modal-title">Contact us</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img src="images/BUYN bubble.png" alt="BUYN bubble.png" style="width: 200px; height: auto;">
+          <p>Ahh..a chatter.  Come come, we lonely.</p>
+          <a href="https://www.instagram.com/buynofficial/?hl=en"><img src="images/insta.png" alt="insta.png" style="width: 30px; height: 30px; margin-left: 1.2rem; margin-right: 1.2rem"></a>
+          <a href=""><img src="images/twitter.png" alt="twitter.png" style="width: 30px; height: 30px; margin-left: 1.2rem; margin-right: 1.2rem"></a>
+          <a href="http://fb.me/buynofficial"><img src="images/facebook.png" alt="facebook.png" style="width: 30px; height: 30px; margin-left: 1.2rem; margin-right: 1.2rem"></a>
+          <a href="mailto:hello@buyn.com"><img src="images/mail.png" alt="facebook.png" style="width: auto; height: 30px; margin-left: 1.2rem; margin-right: 1.2rem"></a>
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" style="text-align: center; border:1px solid #1fe5bd;">Close</button>
+        </div>
+      </div>
 
-          // Store hash
-          var hash = this.hash;
+    </div>
+  </div>
 
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 600, function(){
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog" style="text-align: center;">
+    <div class="modal-dialog">
 
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #1fe5bd; color: #fff;">
+          <h4 class="modal-title">Thank you!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img src="images/BUYN bubble.png" alt="BUYN bubble.png" style="width: 200px; height: auto;">
+          <p>You made the right choice amigo, we'll be in touch real soon.<br><br>
+            In the meantime, talk to us here. Please?
+          </p>
+          <a href="https://www.instagram.com/buynofficial/?hl=en"><img src="images/insta.png" alt="insta.png" style="width: 30px; height: 30px; margin-left: 1.2rem; margin-right: 1.2rem"></a>
+          <a href=""><img src="images/twitter.png" alt="twitter.png" style="width: 30px; height: 30px; margin-left: 1.2rem; margin-right: 1.2rem"></a>
+          <a href="http://fb.me/buynofficial"><img src="images/facebook.png" alt="facebook.png" style="width: 30px; height: 30px; margin-left: 1.2rem; margin-right: 1.2rem"></a>
+          <a href="mailto:hello@buyn.com"><img src="images/mail.png" alt="facebook.png" style="width: auto; height: 30px; margin-left: 1.2rem; margin-right: 1.2rem"></a>
 
-    function myScrolling(loc)
-    {
-      var hash = loc;
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" onclick="location.reload();" style="text-align: center; border:1px solid #1fe5bd;">Close</button>
+        </div>
+      </div>
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+    </div>
+  </div>
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    }
-
-  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="landing_Page.js" charset="utf-8"></script>
+  <script src="/land" charset="utf-8"></script>
 </body>
 
 </html>

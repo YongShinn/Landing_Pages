@@ -1,45 +1,47 @@
 //jshint esversion: 6
 
-const express = require("express");
-const bodyParser = require("body-parser");
-const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("#reg2").on('click', function(event) {
 
-const app = express();
-app.use(bodyParser.json()); // to support JSON bodie
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-app.use(express.static("public"));
+      // Store hash
+      var hash = this.hash;
 
-app.get("/", function(req, res) {
-  res.sendFile(__dirname + "/index.html");
-});
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: 0
+      }, 600, function(){
 
-app.get("/a", function(req, res) {
-  res.sendFile(__dirname + "/THX.html");
-});
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  $("#about").on('click', function(event) {
 
-app.post("/", function(req, res) {
-  var nam = req.body.in_Name;
-  var mail = req.body.in_Email;
-  console.log(nam + mail);
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'https://l3f3ds1nn1.execute-api.ap-southeast-1.amazonaws.com/deploy/landing-page');
-  xhr.onreadystatechange = function(event) {
-    if (xhr.readyState === 4) {
-      console.log(xhr.responseText);
-    }
-  };
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.send(JSON.stringify({
-    name: nam,
-    email: mail,
-  }));
-  res.redirect("/a");
-});
+      // Store hash
+      var hash = this.hash;
 
-app.listen(3000, function() {
-  console.log("Server is running on port 3000");
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 600, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 });
