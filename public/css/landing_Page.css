@@ -6,7 +6,7 @@ body {
 .responsive {
   text-align: center;
   height: auto;
-  max-width: 500px;
+  max-width: 400px;
   max-height: 500px;
   margin: 10px;
 }
