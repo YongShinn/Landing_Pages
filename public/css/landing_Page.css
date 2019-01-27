@@ -3,12 +3,44 @@ body {
   text-align: left;
 }
 
+.responsive {
+  text-align: center;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 10px;
+}
+
 /* Heading */
 .big-heading {
-  font-size: 3rem;
-  font-weight: 700;
+  text-align: center;
+  font-size: 3.75em;
+  font-weight: 1000;
+  letter-spacing: 10px
   line-height: 3.875rem;
-  margin: 11% 10% 0 0;
+  margin: 11% 0% 0 0;
+}
+
+.comingsoon {
+  text-align: center;
+  margin: 5px;
+  font-size: 3.75em;
+  font-weight: 1000;
+  letter-spacing:5px;
+}
+
+.navy-heading {
+  color: white;
+  font-size: 3.75em;
+  font-weight: 1000;
+  margin: 0 0 0 0;
+}
+
+.turq-heading {
+  color: #071e3d;
+  font-size: 3.75em;
+  font-weight: 1000;
+  margin: 0 0 0 0;
 }
 
 .small-heading {
@@ -16,6 +48,7 @@ body {
   line-height: 1.75rem;
   margin: 0 50% 0 0;
 }
+
 
 /* container */
 .container-fluid {
@@ -26,7 +59,28 @@ body {
 .colored-section {
   background-color: #ffffff;
   color: #47525E;
-  padding: 0 10%;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+
+.comingsoonbanner {
+  background-color: #279d85;
+  padding-top: 120px;
+}
+
+.navy-section {
+  background-color: #071e3d;
+  margin: 0 0 0 0;
+  padding: 2%;
+}
+
+.teal-section {
+  background-color: #c7f1e9;
+  padding: 5%
 }
 
 /* Navigation Bar */
@@ -113,7 +167,7 @@ body {
   bottom: 0;
   height: 3px;
   width: 0;
-  background: #1fe5bd;
+  background: #2ac8a7;
   -webkit-transition: width .25s;
   -moz-transition: width .25s;
   -ms-transition: width .25s;
@@ -159,8 +213,8 @@ body {
 }
 
 /* interest_Form */
-.interest_Form
-{
+.interest_Form {
+  text-align: center;
   margin-bottom: 16%;
 }
 .name
@@ -175,6 +229,7 @@ body {
   font-weight: 400;
   line-height: 3.875rem;
   text-align: left;
+  padding-left: 1rem;
 }
 .email
 {
@@ -187,12 +242,13 @@ body {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 3.875rem;
-  text-align: left;
+  text-align: left; 
   margin-left: 0.5rem;
+  padding-left: 1rem;
 }
 .reg
 {
-  background-color: #1FE5BD;
+  background-color: #b61839;
   border-radius: 0.3125rem;
   width: 13.4375rem;
   height: 3.125rem;
@@ -202,11 +258,18 @@ body {
   margin: 0 0 0.3125rem 0.5rem;
 }
 
-/* benefit */
+/* maintexts */
+h2
+{
+  color: white;
+  font-weight: 600;
+  margin: 0 0 100px 0;
+}
+
 h3
 {
-  color: #47525E;
-  font-weight: 700;
+  color: #071e3d;
+  font-weight: 200;
 }
 p{
   color: #8190A5;
@@ -214,13 +277,14 @@ p{
 }
 .reg2
 {
-  background-color: #1FE5BD;
+  background-color: #b61839;;
   color: #FFFFFF;
   border-radius: 0.3125rem;
   width: 13.4375rem;
   height: 3.5rem;
   font-size: 1.7rem;
   font-weight: 700;
+  margin: 5%;
 }
  /* footer */
  .footer
