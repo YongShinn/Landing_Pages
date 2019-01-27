@@ -217,6 +217,7 @@ body {
   background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),url("/images/bubbleback.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   color: #fff;
   padding: 1% 0 1% 0;
 }
@@ -315,12 +316,30 @@ p{
 {
   .big-heading {
     margin: 11% 10% 0 0;
+    font-size: 2em;
+  }
+
+  .comingsoon {
+    font-size: 1.5em;
   }
 
   .small-heading {
     margin: 0 30% 0 0;
   }
 
+  .navy-heading {
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  .turq-heading {
+    font-size: 2em;
+    font-weight: 800;
+  }
+
+  .navywords {
+    font-size: 1.5em;
+  }
   .name
   {
     margin-bottom: 2%;
@@ -338,6 +357,6 @@ p{
   .copyright
   {
      margin: 0 0.5rem;
-
   }
+  
 }
