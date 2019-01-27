@@ -6,7 +6,7 @@ body {
 .responsive {
   text-align: center;
   height: auto;
-  max-width: 325px;
+  max-width: 350px;
   max-height: 500px;
   margin: 10px;
 }
@@ -210,6 +210,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+}
+
+/*interested*/
+.inter {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),url("/images/bubbleback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 1% 0 1% 0;
 }
 
 /* interest_Form */
