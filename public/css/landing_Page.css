@@ -9,6 +9,7 @@ body {
   max-width: 340px;
   max-height: 500px;
   margin: 10px;
+  overflow: hidden;
 }
 
 /* Heading */
@@ -272,7 +273,7 @@ body {
 h2
 {
   color: white;
-  font-weight: 400;
+  font-weight: 200;
   margin: 0 0 100px 0;
 }
 
@@ -280,6 +281,7 @@ h3
 {
   color: #071e3d;
   font-weight: 200;
+  font-size: 1.5rem;
 }
 p{
   color: #8190A5;
