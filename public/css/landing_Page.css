@@ -38,7 +38,7 @@ body {
 }
 
 .turq-heading {
-  color: #071e3d;
+  color: #202030;
   font-size: 3.75em;
   font-weight: 1000;
   margin: 0 0 0 0;
@@ -74,7 +74,7 @@ body {
 }
 
 .navy-section {
-  background-color: #071e3d;
+  background-color: #202030;
   margin: 0 0 0 0;
   padding: 2%;
 }
@@ -279,9 +279,9 @@ h2
 
 h3
 {
-  color: #071e3d;
+  color: #202030;
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 p{
   color: #8190A5;
@@ -303,7 +303,7 @@ p{
  {
    padding: 1% 10%;
    margin-top: 1rem;
-   background-color: #1FE5BD;
+   background-color: #2cc5a5;
  }
  .copyright
  {
