@@ -83,7 +83,9 @@ body {
 
 .teal-section {
   background-color: #c7f1e9;
-  padding: 5%
+  margin: 5% 6.5% 10% 6.5%;
+  padding-top: 5%;
+  
 }
 
 /* Navigation Bar */
