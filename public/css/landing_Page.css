@@ -16,7 +16,7 @@ body {
 .big-heading {
   text-align: center;
   font-size: 3.75em;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 10px
   line-height: 3.875rem;
   margin: 11% 0% 0 0;
@@ -25,9 +25,10 @@ body {
 .comingsoon {
   text-align: center;
   margin: 5px;
-  font-size: 3em;
-  font-weight: 500;
-  letter-spacing:5px;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding: 1px;
+  /* letter-spacing:5px; */
 }
 
 .navy-heading {
@@ -60,23 +61,24 @@ body {
 .colored-section {
   background-color: #ffffff;
   color: #47525E;
-  padding: 0 5%;
+  padding: 0 0 0 0;
   position: fixed;
   top: 0;
   width: 100%;
+  overflow: hidden;
   z-index: 9999;
 }
 
 
 .comingsoonbanner {
-  background-color: #279d85;
-  padding-top: 120px;
+  background-color: #87f0db;
+  padding-top: 65px;
 }
 
 .navy-section {
   background-color: #202030;
-  margin: 0 0 0 0;
-  padding: 2%;
+  margin: 0 7% 0 7%;
+  padding: 1%;
 }
 
 .teal-section {
@@ -86,8 +88,8 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  padding: 1rem 0.5rem 1rem;
-}
+  padding: 0rem 1rem 0rem 1rem;
+ }
 
 .navbar-brand {
   font-family: "Lato";
@@ -207,9 +209,13 @@ body {
 
 /* intro */
 .intro {
-  background-image: linear-gradient(rgba(6, 27, 23, 0.75), rgba(6, 27, 23, 0.75)),url("/images/HERO 1.jpg");
+  background-image: linear-gradient(rgba(253, 255, 254, 0.75), rgba(138, 236, 199, 0.75)),url("/images/HERO 1.1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 86%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #fff;
 }
 
@@ -270,6 +276,10 @@ body {
 }
 
 /* maintexts */
+h1 {
+  color: #202030;
+}
+
 h2
 {
   color: white;
@@ -325,6 +335,7 @@ p{
     font-size: 1.5em;
   }
 
+
   .small-heading {
     margin: 0 30% 0 0;
   }
@@ -342,6 +353,7 @@ p{
   .navywords {
     font-size: 1.5em;
   }
+
   .name
   {
     margin-bottom: 2%;
