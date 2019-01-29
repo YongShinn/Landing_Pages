@@ -211,11 +211,11 @@ body {
 
 /* intro */
 .intro {
-  background-image: linear-gradient(rgba(253, 255, 254, 0.75), rgba(138, 236, 199, 0.75)),url("/images/HERO 1.1.jpg");
+  background-image: linear-gradient(rgba(253, 255, 254, 0.75), rgba(138, 236, 199, 0.75)),url("/images/HERO 1.jpg");
   background-repeat: no-repeat;
-  margin-left: auto;
+ /* margin-left: auto;
   margin-right: auto;
-  width: 86%;
+  width: 86%; */
   margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
