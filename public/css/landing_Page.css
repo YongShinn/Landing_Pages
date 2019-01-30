@@ -213,11 +213,12 @@ body {
 .intro {
   background-image: linear-gradient(rgba(253, 255, 254, 0.75), rgba(138, 236, 199, 0.75)),url("/images/HERO 1.jpg");
   background-repeat: no-repeat;
- /* margin-left: auto;
+  /* margin-left: auto;
   margin-right: auto;
-  width: 86%; */
+  width: 86%;
+  margin-top: 20px; */
   background-size: cover;
-  margin-top: 20px;
+  overflow: hidden;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -295,6 +296,7 @@ h3
   color: #202030;
   font-weight: 200;
   font-size: 1.1rem;
+  text-align: center;
 }
 p{
   color: #8190A5;
@@ -330,17 +332,29 @@ p{
 @media screen and (max-width: 768px)
 {
   .big-heading {
-    margin: 11% 10% 0 0;
+    margin: 11% 0 0 0;
     font-size: 2em;
+    text-align: center;
   }
 
   .comingsoon {
     font-size: 1.5em;
   }
 
+  .h3 {
+    text-align: center;
+  }
 
   .small-heading {
     margin: 0 30% 0 0;
+  }
+
+  h3 {
+    margin-left: 1rem;
+  }
+  
+  p {
+    margin-left: 1rem;
   }
 
   .navy-heading {
