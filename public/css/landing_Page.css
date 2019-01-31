@@ -331,13 +331,11 @@ p{
  /*images floating*/
 
 .stepno1 {
-  width: auto;
-  max-width: 80%;
+  max-width: 70%;
   height: auto;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
-
 
 @media screen and (max-width: 768px)
 {
