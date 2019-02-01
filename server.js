@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-app.use(express.static("public/landing_pages"));
+app.use(express.static("public"));
 
 app.get("/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
