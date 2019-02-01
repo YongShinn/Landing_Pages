@@ -17,11 +17,11 @@ app.get("/", function(req, res) {
 });
 
 app.get("/faq", function(req, res) {
-  res.sendFile(__dirname + "/faq.html");
+  res.sendFile(__dirname + "/landing_pages/faq.html");
 });
 
 app.get("/blog", function(req, res) {
-  res.sendFile(__dirname + "/blog.html");
+  res.sendFile(__dirname + "/landing_pages/blog.html");
 });
 
 app.get("/land", function(req, res) {
