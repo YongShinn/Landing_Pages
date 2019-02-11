@@ -231,6 +231,13 @@ body {
   padding: 1% 0 1% 0;
 }
 
+/* FAQ */
+
+.faqbody h2,
+.faqbody p1 {
+  display: inline;
+}
+
 /* interest_Form */
 .interest_Form {
   text-align: center;
@@ -300,6 +307,13 @@ p{
   color: #8190A5;
   font-weight: 400;
 }
+
+p1 {
+  color: #202030;
+  font-weight: 500;
+  text-align: left;
+}
+
 .reg2
 {
   background-color: #b61839;;
