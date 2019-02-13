@@ -233,6 +233,10 @@ body {
 
 /* FAQ */
 
+.faqpoints {
+  margin: 0 19px 0 19px;
+}
+
 .faqbody h2,
 .faqbody p1 {
   display: inline;
