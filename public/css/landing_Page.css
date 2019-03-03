@@ -71,7 +71,7 @@ body {
 
 
 .comingsoonbanner {
-  background-color: #87f0db;
+  /* background-color: #87f0db; */
   padding-top: 65px;
 }
 
@@ -242,6 +242,64 @@ body {
   display: inline;
 }
 
+/*about*/
+
+
+.teammembers {
+	clear: both;
+	padding: 0 10px 0 10px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+
+
+.aboutbody {
+margin-top: 50px;
+}
+
+
+.aboutpoints {
+  background-color: #f8f8f8;
+  margin: 0 7% 0 7%;
+  padding: 0 70px 0 70px;
+  margin: 0px 25x 0 25px;
+}
+
+.teamsection {
+  background-color: #f8f8f8;
+  margin: 0 7% 0 7%;
+  padding: 1%;
+}
+
+
 /* interest_Form */
 .interest_Form {
   text-align: center;
@@ -355,6 +413,20 @@ p1 {
   margin-right: 15%;
 }
 
+@media screen and (max-width: 1400px) {
+  /*  GRID OF FOUR  */
+    .span_3_of_4,
+    .span_4_of_4 {
+	    width: 100%;
+    }
+
+  .span_1_of_4, 
+  .span_2_of_4  {
+	  width: 48%;
+  }
+}
+
+
 @media screen and (max-width: 768px)
 {
   .big-heading {
@@ -420,4 +492,13 @@ p1 {
     background-image:
   }
 
+	.col {  
+    margin: 1% 0 1% 0%; 
+  }
+
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { 
+    width: 100%; 
+  }
 }
+
+
